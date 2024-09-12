@@ -1,0 +1,100 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Skip to Main Content link */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Style for the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Style for the navigation bar */
+nav {
+    background-color: #333;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+/* Descendent selector to style images in the nav */
+nav img {
+    width: 10%;
+}
+
+/* Commented out existing li styling */
+/* li {
+    display: inline-block;
+    width: 150px;
+} */
+
+/* Style for the main content */
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 18px;
+    min-height: 400px;
+}
+
+/* Style for the footer */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Style for headings */
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.6;
+}
+
+/* Style for the grid class using a two-column grid */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+/* Style only images inside the grid class */
+.grid img {
+    float: left; /* Positions the image to the left */
+  width: 200px; /* Adjust the desired width */
+  height: 150px; /* Adjust the desired height */
+}
+
+/* Style for the flex class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
