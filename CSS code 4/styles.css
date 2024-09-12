@@ -1,0 +1,147 @@
+/* Reset basic styles */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+/* Skip to Main Content link, visible only on focus */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation bar with flex */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #005bb5;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-list li {
+    display: inline-block;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #003f7f;
+    transform: scale(1.05);
+}
+
+/* Main content styling */
+.main-content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Grid layout for images */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+.grid-item img {
+    width: 100%;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Using nth-child to style specific images differently */
+.grid-item:nth-child(2) img {
+    border-radius: 20px;
+}
+
+.grid-item:nth-child(4) img {
+    border-radius: 30px;
+}
+
+/* Flexbox layout for contact section */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1 1 45%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
